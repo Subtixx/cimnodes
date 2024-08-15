@@ -49,311 +49,311 @@ CIMGUI_API void ImNodesStyle_destroy(ImNodesStyle* self)
 }
 CIMGUI_API void imnodes_SetImGuiContext(ImGuiContext* ctx)
 {
-    return imnodes::SetImGuiContext(ctx);
+    return IMNODES_NAMESPACE::SetImGuiContext(ctx);
 }
 CIMGUI_API ImNodesContext* imnodes_CreateContext()
 {
-    return imnodes::CreateContext();
+    return IMNODES_NAMESPACE::CreateContext();
 }
 CIMGUI_API void imnodes_DestroyContext(ImNodesContext* ctx)
 {
-    return imnodes::DestroyContext(ctx);
+    return IMNODES_NAMESPACE::DestroyContext(ctx);
 }
 CIMGUI_API ImNodesContext* imnodes_GetCurrentContext()
 {
-    return imnodes::GetCurrentContext();
+    return IMNODES_NAMESPACE::GetCurrentContext();
 }
 CIMGUI_API void imnodes_SetCurrentContext(ImNodesContext* ctx)
 {
-    return imnodes::SetCurrentContext(ctx);
+    return IMNODES_NAMESPACE::SetCurrentContext(ctx);
 }
 CIMGUI_API ImNodesEditorContext* imnodes_EditorContextCreate()
 {
-    return imnodes::EditorContextCreate();
+    return IMNODES_NAMESPACE::EditorContextCreate();
 }
 CIMGUI_API void imnodes_EditorContextFree(ImNodesEditorContext* noname1)
 {
-    return imnodes::EditorContextFree(noname1);
+    return IMNODES_NAMESPACE::EditorContextFree(noname1);
 }
 CIMGUI_API void imnodes_EditorContextSet(ImNodesEditorContext* noname1)
 {
-    return imnodes::EditorContextSet(noname1);
+    return IMNODES_NAMESPACE::EditorContextSet(noname1);
 }
 CIMGUI_API void imnodes_EditorContextGetPanning(ImVec2 *pOut)
 {
-    *pOut = imnodes::EditorContextGetPanning();
+    *pOut = IMNODES_NAMESPACE::EditorContextGetPanning();
 }
 CIMGUI_API void imnodes_EditorContextResetPanning(const ImVec2 pos)
 {
-    return imnodes::EditorContextResetPanning(pos);
+    return IMNODES_NAMESPACE::EditorContextResetPanning(pos);
 }
 CIMGUI_API void imnodes_EditorContextMoveToNode(const int node_id)
 {
-    return imnodes::EditorContextMoveToNode(node_id);
+    return IMNODES_NAMESPACE::EditorContextMoveToNode(node_id);
 }
 CIMGUI_API ImNodesIO* imnodes_GetIO()
 {
-    return &imnodes::GetIO();
+    return &IMNODES_NAMESPACE::GetIO();
 }
 CIMGUI_API ImNodesStyle* imnodes_GetStyle()
 {
-    return &imnodes::GetStyle();
+    return &IMNODES_NAMESPACE::GetStyle();
 }
 CIMGUI_API void imnodes_StyleColorsDark(ImNodesStyle* dest)
 {
-    return imnodes::StyleColorsDark(dest);
+    return IMNODES_NAMESPACE::StyleColorsDark(dest);
 }
 CIMGUI_API void imnodes_StyleColorsClassic(ImNodesStyle* dest)
 {
-    return imnodes::StyleColorsClassic(dest);
+    return IMNODES_NAMESPACE::StyleColorsClassic(dest);
 }
 CIMGUI_API void imnodes_StyleColorsLight(ImNodesStyle* dest)
 {
-    return imnodes::StyleColorsLight(dest);
+    return IMNODES_NAMESPACE::StyleColorsLight(dest);
 }
 CIMGUI_API void imnodes_BeginNodeEditor()
 {
-    return imnodes::BeginNodeEditor();
+    return IMNODES_NAMESPACE::BeginNodeEditor();
 }
 CIMGUI_API void imnodes_EndNodeEditor()
 {
-    return imnodes::EndNodeEditor();
+    return IMNODES_NAMESPACE::EndNodeEditor();
 }
 CIMGUI_API void imnodes_MiniMap(const float minimap_size_fraction,const ImNodesMiniMapLocation location,const ImNodesMiniMapNodeHoveringCallback node_hovering_callback,const ImNodesMiniMapNodeHoveringCallbackUserData node_hovering_callback_data)
 {
-    return imnodes::MiniMap(minimap_size_fraction,location,node_hovering_callback,node_hovering_callback_data);
+    return IMNODES_NAMESPACE::MiniMap(minimap_size_fraction,location,node_hovering_callback,node_hovering_callback_data);
 }
 CIMGUI_API void imnodes_PushColorStyle(ImNodesCol item,unsigned int color)
 {
-    return imnodes::PushColorStyle(item,color);
+    return IMNODES_NAMESPACE::PushColorStyle(item,color);
 }
 CIMGUI_API void imnodes_PopColorStyle()
 {
-    return imnodes::PopColorStyle();
+    return IMNODES_NAMESPACE::PopColorStyle();
 }
 CIMGUI_API void imnodes_PushStyleVar_Float(ImNodesStyleVar style_item,float value)
 {
-    return imnodes::PushStyleVar(style_item,value);
+    return IMNODES_NAMESPACE::PushStyleVar(style_item,value);
 }
 CIMGUI_API void imnodes_PushStyleVar_Vec2(ImNodesStyleVar style_item,const ImVec2 value)
 {
-    return imnodes::PushStyleVar(style_item,value);
+    return IMNODES_NAMESPACE::PushStyleVar(style_item,value);
 }
 CIMGUI_API void imnodes_PopStyleVar(int count)
 {
-    return imnodes::PopStyleVar(count);
+    return IMNODES_NAMESPACE::PopStyleVar(count);
 }
 CIMGUI_API void imnodes_BeginNode(int id)
 {
-    return imnodes::BeginNode(id);
+    return IMNODES_NAMESPACE::BeginNode(id);
 }
 CIMGUI_API void imnodes_EndNode()
 {
-    return imnodes::EndNode();
+    return IMNODES_NAMESPACE::EndNode();
 }
 CIMGUI_API void imnodes_GetNodeDimensions(ImVec2 *pOut,int id)
 {
-    *pOut = imnodes::GetNodeDimensions(id);
+    *pOut = IMNODES_NAMESPACE::GetNodeDimensions(id);
 }
 CIMGUI_API void imnodes_BeginNodeTitleBar()
 {
-    return imnodes::BeginNodeTitleBar();
+    return IMNODES_NAMESPACE::BeginNodeTitleBar();
 }
 CIMGUI_API void imnodes_EndNodeTitleBar()
 {
-    return imnodes::EndNodeTitleBar();
+    return IMNODES_NAMESPACE::EndNodeTitleBar();
 }
 CIMGUI_API void imnodes_BeginInputAttribute(int id,ImNodesPinShape shape)
 {
-    return imnodes::BeginInputAttribute(id,shape);
+    return IMNODES_NAMESPACE::BeginInputAttribute(id,shape);
 }
 CIMGUI_API void imnodes_EndInputAttribute()
 {
-    return imnodes::EndInputAttribute();
+    return IMNODES_NAMESPACE::EndInputAttribute();
 }
 CIMGUI_API void imnodes_BeginOutputAttribute(int id,ImNodesPinShape shape)
 {
-    return imnodes::BeginOutputAttribute(id,shape);
+    return IMNODES_NAMESPACE::BeginOutputAttribute(id,shape);
 }
 CIMGUI_API void imnodes_EndOutputAttribute()
 {
-    return imnodes::EndOutputAttribute();
+    return IMNODES_NAMESPACE::EndOutputAttribute();
 }
 CIMGUI_API void imnodes_BeginStaticAttribute(int id)
 {
-    return imnodes::BeginStaticAttribute(id);
+    return IMNODES_NAMESPACE::BeginStaticAttribute(id);
 }
 CIMGUI_API void imnodes_EndStaticAttribute()
 {
-    return imnodes::EndStaticAttribute();
+    return IMNODES_NAMESPACE::EndStaticAttribute();
 }
 CIMGUI_API void imnodes_PushAttributeFlag(ImNodesAttributeFlags flag)
 {
-    return imnodes::PushAttributeFlag(flag);
+    return IMNODES_NAMESPACE::PushAttributeFlag(flag);
 }
 CIMGUI_API void imnodes_PopAttributeFlag()
 {
-    return imnodes::PopAttributeFlag();
+    return IMNODES_NAMESPACE::PopAttributeFlag();
 }
 CIMGUI_API void imnodes_Link(int id,int start_attribute_id,int end_attribute_id)
 {
-    return imnodes::Link(id,start_attribute_id,end_attribute_id);
+    return IMNODES_NAMESPACE::Link(id,start_attribute_id,end_attribute_id);
 }
 CIMGUI_API void imnodes_SetNodeDraggable(int node_id,const bool draggable)
 {
-    return imnodes::SetNodeDraggable(node_id,draggable);
+    return IMNODES_NAMESPACE::SetNodeDraggable(node_id,draggable);
 }
 CIMGUI_API void imnodes_SetNodeScreenSpacePos(int node_id,const ImVec2 screen_space_pos)
 {
-    return imnodes::SetNodeScreenSpacePos(node_id,screen_space_pos);
+    return IMNODES_NAMESPACE::SetNodeScreenSpacePos(node_id,screen_space_pos);
 }
 CIMGUI_API void imnodes_SetNodeEditorSpacePos(int node_id,const ImVec2 editor_space_pos)
 {
-    return imnodes::SetNodeEditorSpacePos(node_id,editor_space_pos);
+    return IMNODES_NAMESPACE::SetNodeEditorSpacePos(node_id,editor_space_pos);
 }
 CIMGUI_API void imnodes_SetNodeGridSpacePos(int node_id,const ImVec2 grid_pos)
 {
-    return imnodes::SetNodeGridSpacePos(node_id,grid_pos);
+    return IMNODES_NAMESPACE::SetNodeGridSpacePos(node_id,grid_pos);
 }
 CIMGUI_API void imnodes_GetNodeScreenSpacePos(ImVec2 *pOut,const int node_id)
 {
-    *pOut = imnodes::GetNodeScreenSpacePos(node_id);
+    *pOut = IMNODES_NAMESPACE::GetNodeScreenSpacePos(node_id);
 }
 CIMGUI_API void imnodes_GetNodeEditorSpacePos(ImVec2 *pOut,const int node_id)
 {
-    *pOut = imnodes::GetNodeEditorSpacePos(node_id);
+    *pOut = IMNODES_NAMESPACE::GetNodeEditorSpacePos(node_id);
 }
 CIMGUI_API void imnodes_GetNodeGridSpacePos(ImVec2 *pOut,const int node_id)
 {
-    *pOut = imnodes::GetNodeGridSpacePos(node_id);
+    *pOut = IMNODES_NAMESPACE::GetNodeGridSpacePos(node_id);
 }
 CIMGUI_API void imnodes_SnapNodeToGrid(int node_id)
 {
-    return imnodes::SnapNodeToGrid(node_id);
+    return IMNODES_NAMESPACE::SnapNodeToGrid(node_id);
 }
 CIMGUI_API bool imnodes_IsEditorHovered()
 {
-    return imnodes::IsEditorHovered();
+    return IMNODES_NAMESPACE::IsEditorHovered();
 }
 CIMGUI_API bool imnodes_IsNodeHovered(int* node_id)
 {
-    return imnodes::IsNodeHovered(node_id);
+    return IMNODES_NAMESPACE::IsNodeHovered(node_id);
 }
 CIMGUI_API bool imnodes_IsLinkHovered(int* link_id)
 {
-    return imnodes::IsLinkHovered(link_id);
+    return IMNODES_NAMESPACE::IsLinkHovered(link_id);
 }
 CIMGUI_API bool imnodes_IsPinHovered(int* attribute_id)
 {
-    return imnodes::IsPinHovered(attribute_id);
+    return IMNODES_NAMESPACE::IsPinHovered(attribute_id);
 }
 CIMGUI_API int imnodes_NumSelectedNodes()
 {
-    return imnodes::NumSelectedNodes();
+    return IMNODES_NAMESPACE::NumSelectedNodes();
 }
 CIMGUI_API int imnodes_NumSelectedLinks()
 {
-    return imnodes::NumSelectedLinks();
+    return IMNODES_NAMESPACE::NumSelectedLinks();
 }
 CIMGUI_API void imnodes_GetSelectedNodes(int* node_ids)
 {
-    return imnodes::GetSelectedNodes(node_ids);
+    return IMNODES_NAMESPACE::GetSelectedNodes(node_ids);
 }
 CIMGUI_API void imnodes_GetSelectedLinks(int* link_ids)
 {
-    return imnodes::GetSelectedLinks(link_ids);
+    return IMNODES_NAMESPACE::GetSelectedLinks(link_ids);
 }
 CIMGUI_API void imnodes_ClearNodeSelection_Nil()
 {
-    return imnodes::ClearNodeSelection();
+    return IMNODES_NAMESPACE::ClearNodeSelection();
 }
 CIMGUI_API void imnodes_ClearLinkSelection_Nil()
 {
-    return imnodes::ClearLinkSelection();
+    return IMNODES_NAMESPACE::ClearLinkSelection();
 }
 CIMGUI_API void imnodes_SelectNode(int node_id)
 {
-    return imnodes::SelectNode(node_id);
+    return IMNODES_NAMESPACE::SelectNode(node_id);
 }
 CIMGUI_API void imnodes_ClearNodeSelection_Int(int node_id)
 {
-    return imnodes::ClearNodeSelection(node_id);
+    return IMNODES_NAMESPACE::ClearNodeSelection(node_id);
 }
 CIMGUI_API bool imnodes_IsNodeSelected(int node_id)
 {
-    return imnodes::IsNodeSelected(node_id);
+    return IMNODES_NAMESPACE::IsNodeSelected(node_id);
 }
 CIMGUI_API void imnodes_SelectLink(int link_id)
 {
-    return imnodes::SelectLink(link_id);
+    return IMNODES_NAMESPACE::SelectLink(link_id);
 }
 CIMGUI_API void imnodes_ClearLinkSelection_Int(int link_id)
 {
-    return imnodes::ClearLinkSelection(link_id);
+    return IMNODES_NAMESPACE::ClearLinkSelection(link_id);
 }
 CIMGUI_API bool imnodes_IsLinkSelected(int link_id)
 {
-    return imnodes::IsLinkSelected(link_id);
+    return IMNODES_NAMESPACE::IsLinkSelected(link_id);
 }
 CIMGUI_API bool imnodes_IsAttributeActive()
 {
-    return imnodes::IsAttributeActive();
+    return IMNODES_NAMESPACE::IsAttributeActive();
 }
 CIMGUI_API bool imnodes_IsAnyAttributeActive(int* attribute_id)
 {
-    return imnodes::IsAnyAttributeActive(attribute_id);
+    return IMNODES_NAMESPACE::IsAnyAttributeActive(attribute_id);
 }
 CIMGUI_API bool imnodes_IsLinkStarted(int* started_at_attribute_id)
 {
-    return imnodes::IsLinkStarted(started_at_attribute_id);
+    return IMNODES_NAMESPACE::IsLinkStarted(started_at_attribute_id);
 }
 CIMGUI_API bool imnodes_IsLinkDropped(int* started_at_attribute_id,bool including_detached_links)
 {
-    return imnodes::IsLinkDropped(started_at_attribute_id,including_detached_links);
+    return IMNODES_NAMESPACE::IsLinkDropped(started_at_attribute_id,including_detached_links);
 }
 CIMGUI_API bool imnodes_IsLinkCreated_BoolPtr(int* started_at_attribute_id,int* ended_at_attribute_id,bool* created_from_snap)
 {
-    return imnodes::IsLinkCreated(started_at_attribute_id,ended_at_attribute_id,created_from_snap);
+    return IMNODES_NAMESPACE::IsLinkCreated(started_at_attribute_id,ended_at_attribute_id,created_from_snap);
 }
 CIMGUI_API bool imnodes_IsLinkCreated_IntPtr(int* started_at_node_id,int* started_at_attribute_id,int* ended_at_node_id,int* ended_at_attribute_id,bool* created_from_snap)
 {
-    return imnodes::IsLinkCreated(started_at_node_id,started_at_attribute_id,ended_at_node_id,ended_at_attribute_id,created_from_snap);
+    return IMNODES_NAMESPACE::IsLinkCreated(started_at_node_id,started_at_attribute_id,ended_at_node_id,ended_at_attribute_id,created_from_snap);
 }
 CIMGUI_API bool imnodes_IsLinkDestroyed(int* link_id)
 {
-    return imnodes::IsLinkDestroyed(link_id);
+    return IMNODES_NAMESPACE::IsLinkDestroyed(link_id);
 }
 CIMGUI_API const char* imnodes_SaveCurrentEditorStateToIniString(size_t* data_size)
 {
-    return imnodes::SaveCurrentEditorStateToIniString(data_size);
+    return IMNODES_NAMESPACE::SaveCurrentEditorStateToIniString(data_size);
 }
 CIMGUI_API const char* imnodes_SaveEditorStateToIniString(const ImNodesEditorContext* editor,size_t* data_size)
 {
-    return imnodes::SaveEditorStateToIniString(editor,data_size);
+    return IMNODES_NAMESPACE::SaveEditorStateToIniString(editor,data_size);
 }
 CIMGUI_API void imnodes_LoadCurrentEditorStateFromIniString(const char* data,size_t data_size)
 {
-    return imnodes::LoadCurrentEditorStateFromIniString(data,data_size);
+    return IMNODES_NAMESPACE::LoadCurrentEditorStateFromIniString(data,data_size);
 }
 CIMGUI_API void imnodes_LoadEditorStateFromIniString(ImNodesEditorContext* editor,const char* data,size_t data_size)
 {
-    return imnodes::LoadEditorStateFromIniString(editor,data,data_size);
+    return IMNODES_NAMESPACE::LoadEditorStateFromIniString(editor,data,data_size);
 }
 CIMGUI_API void imnodes_SaveCurrentEditorStateToIniFile(const char* file_name)
 {
-    return imnodes::SaveCurrentEditorStateToIniFile(file_name);
+    return IMNODES_NAMESPACE::SaveCurrentEditorStateToIniFile(file_name);
 }
 CIMGUI_API void imnodes_SaveEditorStateToIniFile(const ImNodesEditorContext* editor,const char* file_name)
 {
-    return imnodes::SaveEditorStateToIniFile(editor,file_name);
+    return IMNODES_NAMESPACE::SaveEditorStateToIniFile(editor,file_name);
 }
 CIMGUI_API void imnodes_LoadCurrentEditorStateFromIniFile(const char* file_name)
 {
-    return imnodes::LoadCurrentEditorStateFromIniFile(file_name);
+    return IMNODES_NAMESPACE::LoadCurrentEditorStateFromIniFile(file_name);
 }
 CIMGUI_API void imnodes_LoadEditorStateFromIniFile(ImNodesEditorContext* editor,const char* file_name)
 {
-    return imnodes::LoadEditorStateFromIniFile(editor,file_name);
+    return IMNODES_NAMESPACE::LoadEditorStateFromIniFile(editor,file_name);
 }
 
 
